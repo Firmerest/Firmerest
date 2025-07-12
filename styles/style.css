@@ -57,6 +57,16 @@ nav ul {
     padding: 0;
 }
 
+.cardContainer 
+{
+    grid-template-columns: auto;
+}
+
+.card
+{
+    grid-row: auto;
+}
+
 article {
 float: left;
 padding: 20px;
@@ -70,12 +80,17 @@ section::after {
     clear: both;
 }
 
-footer {
+footer { 
     background-color: #777;
     padding: 10px;
     text-align: center;
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
+
 
 @media (max-width: 600px) {
     nav, article {
